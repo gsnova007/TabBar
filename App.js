@@ -27,20 +27,24 @@ const App = () => {
 
   return (
     <View style={{flex:1,backgroundColor:'#2c3137'}}>
-      <View style={{height:'10%', borderBottomWidth:1, borderBottomColor:'#fff', flexDirection:'row',justifyContent:'space-between', paddingLeft:20, paddingRight:10, alignItems:'center'}}>
-        <Icon name="th-large" type="font-awesome" color="#fff"/>
-        <Text style={{color:'#fff', fontSize:18, marginLeft:'5%'}}>File Selected</Text>
-        <Avatar rounded icon={{name: 'user', type:'font-awesome'}} size={50} overlayContainerStyle={{backgroundColor: 'grey'}}>
+      <View style={{height:'10%', borderBottomWidth:1, borderBottomColor:'#fff', flexDirection:'row',justifyContent:'center', paddingLeft:20, paddingRight:10, alignItems:'center'}}>
+        {/* <Icon name="th-large" type="font-awesome" color="#fff"/> */}
+        <Text style={{color:'#fff', fontSize:18}}>File Selected</Text>
+        {/* <Avatar rounded icon={{name: 'user', type:'font-awesome'}} size={50} overlayContainerStyle={{backgroundColor: 'grey'}}>
           <Avatar.Accessory rounded size={17} name='bars' type='font-awesome' style={{backgroundColor:'#fff'}} color="black"/>
-        </Avatar>
+        </Avatar> */}
       </View>
       <View style={{flex:1}}>
         <StatusBar
           backgroundColor="#2c3137"
           fontColor='#000'
         />
-        <View style={{flex:1,backgroundColor:'#2c3137'}}></View>
-        <View style={{flex:1, backgroundColor: '#2c3137', padding:'3%'}}>
+        <View style={{flex:1,backgroundColor:'#2c3137',paddingHorizontal:'3%',paddingTop:'4%'}}>
+          <View style={{borderColor:'white',borderWidth:1,borderRadius:10,flex:1}}>
+            
+          </View>
+        </View>
+        <View style={{flex:1, backgroundColor: '#2c3137', padding:'3%', paddingBottom:0}}>
           <TabView
             navigationState={{ index, routes }}
             renderTabBar={renderTabBar}
